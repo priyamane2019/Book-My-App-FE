@@ -1,0 +1,224 @@
+.seat-booking {
+  text-align: center;
+}
+
+.controls {
+  display:flex;
+  margin-left: 130px;
+}
+.controlTickQunt{
+  padding:0px 5px 5px 100px;
+width:100px;
+height:40px;
+}
+.controlSequentialMode
+{
+  padding:5px;
+  width:200px;
+height:40px;
+
+}
+.controlTicketType
+{
+  padding:5px;
+  width:300px;
+  height:40px;
+}
+
+.check_box{
+  cursor: pointer;
+
+}
+
+.ticket_qunt{
+  width:50px;
+  height:30px;
+  margin:10px 20px 10px -300px;
+  border-radius: 5px;
+}
+.seat-container {
+  display: grid;
+  grid-template-columns: repeat(14, 40px); 
+  row-gap: 5px;
+  max-width: 400px;
+  margin-left:60px;
+}
+
+ .prime-seat-container {
+  display: grid;
+  grid-template-columns: repeat(20, 40px); 
+  row-gap: 5px;
+  max-width: 400px;
+  margin-left:60px;
+}
+hr{
+  color:#999;
+}
+.primium-name, .non-premium-name{
+  text-align:start;
+}
+.primium-seat{
+  background-color: #999;
+  cursor: not-allowed;
+  width:30px;
+  height:20px;
+  border:none;
+  padding-top:5px;
+}
+select{
+  cursor: pointer;
+}
+
+ .row-label-primium{
+  padding:10px;
+}
+.row-label{
+  padding: 10px;
+}
+.seat {
+  width:30px;
+  height:20px;
+  padding-top:5px;
+  background-color: #fff;
+  display: flex;
+  cursor: pointer;
+  user-select: none;
+  border:0.5px solid green;
+}
+
+.seat:hover {
+  border: 2px solid green; 
+}
+
+.seat.selected {
+  background-color: #4caf50; 
+  color: white;
+}
+
+.seat.unavailable {
+  background-color: #999; 
+  cursor: not-allowed;
+  padding-top:5px;
+  width:30px;
+  height:20px;
+  border:none;
+}
+.primium-row, .rows-name{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 5px;
+}
+.primium-seats-layout, .seats-layout{
+  display: flex;
+  gap:10px;
+}
+
+.seat.booked {
+  padding-top: 5px;
+  width:30px;
+  height:20px;
+  background-color: #999; 
+  cursor: not-allowed;
+  border:none;
+}
+
+button {
+  width:150px;
+  height:30px;
+  margin-top: 20px;
+  margin-left:10px;
+  border-radius: 5px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.proceed-btn{
+  margin-bottom: 10px;
+}
+
+button:hover {
+  border:1px solid white;
+  padding-top:5px;
+}
+button:active{
+background-color: #0056b3;
+border:2px solid #0056b3;
+  padding-top:5px;
+}
+.ctime{
+  width:250px;
+  height: 20px;
+  background-color: blue;
+  color:white;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: large;
+  font-weight: 500;
+}
+
+.seats-confirm-msg
+{
+color:green;
+margin-top:5px;
+position:relative
+}
+
+
+.non-premium-seats {
+  display: grid;
+  grid-template-columns: repeat(3, 40px); 
+  gap: 10px;                              
+  width: 300px;                         
+  margin-left:250px;   
+  row-gap: 5px;
+  max-width: 100px;
+}
+
+.premium-seats-booked {
+  width:25px;
+  height:20px;
+  padding: 5px;
+  display: flex;
+  background-color: #999; 
+  cursor: not-allowed;
+  border:none;
+}
+.confirmation-popup{
+  width:400px;
+  height:150px;
+  margin: 0 auto;
+  border:2px solid gray;
+  border-radius: 10px;
+  background-color: #4caf50;
+}
+
+.normal-seats {
+  display: grid;
+  grid-template-columns: repeat(16, 40px); 
+  gap: 10px;                              
+  width: 300px;                         
+  margin-left:95px;   
+  row-gap: 5px;
+  max-width: 100px;
+}
+
+.normal-seats-booked {
+  width:25px;
+  height:20px;
+  padding: 5px;
+  display: flex;
+  background-color: #999; 
+  cursor: not-allowed;
+  border:none;
+}
+.header{
+  display: flex;
+  justify-content: space-evenly;
+  background-color: black;
+  color:white;
+  margin:0;
+  padding-top:20px;
+  padding-bottom: 5px;
+}
